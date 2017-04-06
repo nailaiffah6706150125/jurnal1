@@ -19,11 +19,14 @@ public class No1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner s = new Scanner(System.in);
+	    int a=0;
 		System.out.print("Masukkanpa deret fibonacci ? ");
 		int n = s.nextInt();
-		for(int i=1;i<=n;i++)
-			System.out.print(fibo(i) + " ");
-		System.out.println();
+	    	
+		for(int i=1;i<=n;i++){
+			a += fibo(i);
+		System.out.println(a);
+		}
 	}
 
 	private static int fibo(int n)
