@@ -17,6 +17,12 @@ public class No1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+	    
+	// ini reverse
+	    public static long fibo(int n){
+        if(n <=1) return n;
+        else return fibo(n-1) + fibo(n-2);
+    }
         // TODO code application logic here
         Scanner s = new Scanner(System.in);
 		System.out.print("Masukkanpa deret fibonacci ? ");
@@ -35,5 +41,13 @@ public class No1 {
 			f = fibo(n-1) + fibo(n-2);
 		return f;
     }
+	//Ini reverse
+	System.out.print("\nInput: ");
+        Scanner sh = new Scanner(System.in);
+        data2 = sh.nextInt();
+        System.out.println("Reverse");
+        for(int i = data2; i >= 1; i--){
+            System.out.print(fibo(i)+ " ");
+        }
     
 }
